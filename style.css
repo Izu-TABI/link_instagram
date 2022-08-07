@@ -4,7 +4,7 @@
     white-space: nowrap;
     overflow-y: scroll;
     -ms-overflow-style: none;    /* IE, Edge 対応 */
-    scrollbar-width: none;       /* Firefox 対応 */
+    /* scrollbar-width: none;       Firefox 対応 */
 }
 
 body, html {
@@ -13,7 +13,7 @@ body, html {
 }
 
 body {
-    background: url(img/bg_img.jpg) no-repeat;
+    background: url(/img/bg_img.jpg) no-repeat;
     background-size: cover;
     background-color: gray;
     text-align: center;
@@ -49,6 +49,8 @@ a {
 }
 
 li {
+    backdrop-filter: blur(10px) contrast(130%);
+    background-color: rgba(87, 87, 87, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,11 +61,11 @@ li {
     margin-right: auto;
 
     text-shadow: 1px 0 0 gray, 0 1px 0 gray;
-    backdrop-filter: blur(20px);
     border-radius: 1.5em;
     border: 1px solid #fff;
     padding: 5px;
-    width: 10em;
+    width: 20em;
+    height: 2em;
 }
 
 
@@ -78,11 +80,11 @@ li {
 }
 
 .id-insta {
+    backdrop-filter: blur(100px) contrast(1);
+    background-color: rgba(83, 83, 83, 0.9);
     font-size: 15px;
-
     border-radius: 2em;
     border: 1px solid #fff;
 
-    background-color: rgb(99, 96, 96);
     padding: 5px;
 }
