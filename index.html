@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            VANTA.BIRDS({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 3.00,
+            color1: 0xff3c3c,
+            color2: 0xfc3e8c,
+            quantity: 3.00,
+            backgroundAlpha: 0.0
+        })
+            setTimeout(() =>{
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000)
+
+        })
+
+    </script>
+    <title>i.masaki14's links</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"></link>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main>
+        <div class="icon-area">
+        <img src="/img/icon_insta.jpeg" alt="icon" style="width:7em; height:7em;" id="icon">    
+        </div>
+        <a href="https://www.instagram.com/i.masaki14" class="id-insta">@i.masaki14</a>
+
+        <ul class="links">
+        <li><img src="/img/home.png" style="width: 1.5em; height: 1.5em;"><a href="https://izu-tabi.github.io/portfolio/">Portfolio</a></li>
+        <li><img src="/img/github_logo_icon_.png" style="width:1em; height:1em;">&nbsp;<a href="https://github.com/Izu-TABI">GitHub</a></li>
+        <li><img src="/img/2021 Twitter logo - white.png" style="width: 1em; height: 1em;">&nbsp;<a href="https://twitter.com/chicken_dehanai">Twitter</a></li>
+        <li><img src="/img/mail.png" style="width: 1.5em; height: 1.5em;"><a href="https://boxfreshapp.com/index.php?id=boxfresh_335608Ikp076">Question</a></li>
+        </ul>
+    </main>
+</body>
+
+</html>

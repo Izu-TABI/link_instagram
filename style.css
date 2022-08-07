@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-y: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(/img/bg_img.jpg) no-repeat;
+    background-size: cover;
+    background-color: gray;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+
+
+.icon-area {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#icon {
+    border-radius: 100%;
+    border: 1.5px solid #fff;
+}
+
+ul {
+    margin-top: 40px;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-shadow: 1px 0 0 gray, 0 1px 0 gray;
+    backdrop-filter: blur(20px);
+    border-radius: 1.5em;
+    border: 1px solid #fff;
+    padding: 5px;
+    width: 10em;
+}
+
+
+#vanta {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.id-insta {
+    font-size: 15px;
+
+    border-radius: 2em;
+    border: 1px solid #fff;
+
+    background-color: rgb(99, 96, 96);
+    padding: 5px;
+}
